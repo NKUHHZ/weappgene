@@ -1,13 +1,37 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/addCgi/addCgi"
+    "pages/addCgi/addCgi",
+    "pages/QueryRecord/QueryRecord",
+    "pages/QueryResult/QueryResult"
   ],
   "window":{
-    "backgroundColor":"#F6F6F6",
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
-    "navigationBarTextStyle":"black"
+    "backgroundColor":"#6495ED",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "Genetic Query",
+    "navigationBarTextStyle":"#FFFFFF"
+  },
+  "tabBar":{
+    "color": "#CCCCCC",
+    "selectedColor": "#27408B",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "#336666",
+    "list":[
+     {
+
+       "pagePath":"pages/index/index",
+       "text":"首页",
+       "iconPath": "resource/bar_Query_black.png",
+      "selectedIconPath": "resource/bar_Query_blue.png"
+     },
+     {
+        "pagePath":"pages/QueryRecord/QueryRecord",
+        "text":"查询记录",
+        "iconPath": "resource/bar_record_black.png",
+        "selectedIconPath": "resource/bar_record_blue.png"
+     }
+    
+    ]
   }
 }
