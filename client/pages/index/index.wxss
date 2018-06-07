@@ -1,6 +1,30 @@
 page {
     background: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+}
+.input{
+  margin-top:300rpx;
+    display:flex;
+    flex-direction:column;
+}
+.Num{
+  margin-left:40rpx;
+  margin-bottom:20rpx;
+  display:flex;
+  flex-direction:row;
+}
+.Numtext{
+  width:180rpx;
+}
+.Num-input{
+  background:white;
+}
+
+.button1{
+  width:200rpx;
+  height:80rpx;
+
+}
+.button-down{
+  background:#6495ED;
+
 }

@@ -87,7 +87,14 @@ Page({
             wx.request(options)
         }
     },
-
+    tap: function (e) { //定位到公告详情页面
+      var that = this;
+     // var dataI = e.currentTarget.dataset.index;
+      wx.navigateTo({
+        //url: '../Imformation/Imformation?index=' + dataI + '&type=0'
+        url:'../QueryResult/QueryResult'
+      })
+    },
     // 上传图片接口
     doUpload: function () {
         var that = this
@@ -147,7 +154,6 @@ Page({
             this.closeTunnel()
         }
     },
-
     openTunnel: function () {
         util.showBusy('信道连接中...')
         // 创建信道，需要给定后台服务地址
