@@ -3,44 +3,28 @@
 
     <!--view class="title"><text class="title-text">{{article.title}}</text></view-->
     <view class="title">
-      <text class="title-text">您的基因检测结果
-      药物敏感性致聋基因突变：
+      <text class="title-text">{{QueryType}}
       </text>
-      <text class="title-text1">携带（未携带）
+      <text class="title-text1">{{QueryResult}}
       </text>
       
-      </view>
+    </view>
 
     <view class="space"><view class="space1"></view></view>
     <view wx:for="{{article.image_path}}" class="article-image" >
       <image src="{{item}}" mode="aspectFit"class="image"></image>
     </view>
-    <view class="article"><text class="article-text">检测内容： 
-mtDNA（线粒体 DNA）中的 12SrRNA 基因中与药物性耳聋相关的 A1555G、C194T
-（位点） 突变 
-注意： 
-1、该检测不适用于临床诊断，如有临床需求，请和有资质的机构或医生联系。 
-2、疾病的发生由基因和环境等多重因素共同决定，本检测只对您携带药物敏感 
-   性致聋基因位点的情况进行筛查。 
-3、检测局限；受限于现有科技手段和科学认知水平，该检测未能覆盖耳聋疾病 
-   所有致病基因或位点 
-4、需注意的是，携带相关变异并不能代表您真实的患病状态；未携带相关变异， 
-   亦不能排除您患耳聋疾病的可能。 
-5、如您的家族有耳聋疾病的家族病史，或者您觉得自己有药物致聋的可能性， 
-   建议您咨询权威的健康专家或临床医生寻求帮助。 相关知识： 
-1、药物中毒性耳聋影响因素 
-可控因素：如果误服氨基糖苷类药物等耳毒性药物或化学品，可能导致耳聋；对 
-         0 于特定人群，避免此类药物的使用可直接避免药物性耳聋； 
-2、发病时间 
-耳聋多在用药后 1--2 周出现，逐渐加重，半年后逐渐稳定； 
-3、流行程度 
-大约每 20 人中有 1 人携带药物敏感性致聋基因突变。 
-4、典型症状 
-用药后双耳听力下降或突然耳聋，可伴有不同程度的耳鸣；听力检查有不同程度
-的听力损失，以感音性耳聋为多，亦有混合型耳聋者； 
-5、治疗方法 
-目前药物性耳聋无法治愈，佩戴人工耳蜗等听力辅助设备有助于提高听觉功能。
- </text></view>
+    <view class="article">
+      <text class="article-text">检测内容：
+    {{QueryContent}}
+    </text> 
+      <text class="article-text"> 注意：
+    {{Attention}}
+    </text> 
+      <text class="article-text">相关知识： 
+    {{RelevantContent}}
+    </text>
+    </view>
     <view class="space2"></view>
   </view>
  </view>
