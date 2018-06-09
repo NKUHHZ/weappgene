@@ -1,4 +1,5 @@
 //index.js
+const app = getApp();
 var qcloud = require('../../vendor/wafer2-client-sdk/index')
 var config = require('../../config')
 var util = require('../../utils/util.js')
@@ -8,7 +9,10 @@ Page({
         userInfo: {},
         logged: false,
         takeSession: false,
-        requestResult: ''
+        requestResult: '',
+        num:'',
+        phoneNum:''
+
     },
 
     // 用户登录示例
@@ -87,11 +91,26 @@ Page({
             wx.request(options)
         }
     },
+    //text传参
+    numInput:function(e){
+      this.setData({
+        num: e.detail.value
+      })
+
+    },
+    numberInput:function(e){
+      this.setData({
+        phoneNum: e.detail.value
+      })
+    },
+
+    //按钮 跳转至查询结果页面
     tap: function (e) { //定位到公告详情页面
       var that = this;
-     // var dataI = e.currentTarget.dataset.index;
+      wx.request({
+        url: '',
+      })
       wx.navigateTo({
-        //url: '../Imformation/Imformation?index=' + dataI + '&type=0'
         url:'../QueryResult/QueryResult'
       })
     },

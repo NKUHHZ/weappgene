@@ -1,27 +1,9 @@
-<view > 
-  <view class="input">
-    <view class="Num">
-      <view class="Numtext">
-        <text class="text">编号</text>
-      </view>
-      <view class="Num-input">
-        <input type="text"></input>
-      </view>
-
+<view class="container">
+<text>基因查询</text>
+    <view class='content'>
+        <image class="user-avatar" src="../../resource/logo1.jpg"></image>
+        <input placeholder="编号" class='user-id' >{{num}}</input>
+        <input placeholder="手机号码" class='password'>{{phoneNum}}</input>
+        <button class='login' bindtap='tap' hover-class='login-hover'>确认</button>
     </view>
-    <view class="Num">
-      <view class="Numtext">
-        <text class="text">手机号码</text>
-      </view>
-      <view class="Num-input">
-        <input type="number"></input>
-      </view>  
-
-    </view>
-  </view>
-  <view class="button">
-  <button class="button1"hover-class="button-down" bindtap="tap">确认查询</button>
-  </view>
-
-
 </view>
